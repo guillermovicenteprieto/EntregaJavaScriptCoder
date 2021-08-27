@@ -28,16 +28,16 @@ class Ceramica {
 //  __________  VARIABLES __________ 
 
 //Instanciando objetos a partir de la clase Cerámica
-const tazaGr = new Ceramica(`ID 1`, 'Taza Grande', 'Lorenzo', `Blanco`, 900, 12, `img/tazasGr.jpeg`);
-const tazaCh = new Ceramica(`ID 2`, 'Taza Chica', 'Agatha', `Blanco`, 650, 12, `img/tazasCh.jpg`);
-const tetera = new Ceramica(`ID 3`, 'Tetera', 'Pocha', `Blanco`, 1200, 5, `img/tetera.jpg`);
-const platoGr = new Ceramica(`ID 4`, 'Plato Grande', 'Pachorra', `Blanco`, 1000, 12, `img/platoGr.jpg`);
-const platoCh = new Ceramica(`ID 5`, 'Plato Chico', 'AzarOso', `Blanco`, 850, 12, `img/platoCh.jpeg`);
-const exprimidor = new Ceramica(`ID 6`, 'Exprimidor', 'Polaca', `Blanco`, 900, 5, `img/exprimidor.jpeg`);
-const fuente = new Ceramica(`ID 7`, 'Fuente', 'Pumba', `Blanco`, 1750, 6, `img/fuente.jpg`);
-const bowlGr = new Ceramica(`ID 8`, 'Bowl Grande', 'Silver', `Blanco`, 1200, 4, `img/bowlGr.jpg`);
-const bowlCh = new Ceramica(`ID 9`, 'Bowl Chico', 'Sancho', `Blanco`, 1000, 4, `img/bowlCh.jpg`);
-const ensaladera = new Ceramica(`ID 10`, 'Ensaladera', 'Pe King', `Blanco`, 1200, 4, `img/ensaladera.jpg`);
+const tazaGr = new Ceramica(`ID 1`, 'Taza Grande', 'Lorenzo', `Blanco`, 900, 12, `../img/tazasGr.jpeg`);
+const tazaCh = new Ceramica(`ID 2`, 'Taza Chica', 'Agatha', `Blanco`, 650, 12, `../img/tazasCh.jpg`);
+const tetera = new Ceramica(`ID 3`, 'Tetera', 'Pocha', `Blanco`, 1200, 5, `./img/tetera.jpg`);
+const platoGr = new Ceramica(`ID 4`, 'Plato Grande', 'Pachorra', `Blanco`, 1000, 12, `./img/platoGr.jpg`);
+const platoCh = new Ceramica(`ID 5`, 'Plato Chico', 'AzarOso', `Blanco`, 850, 12, `./img/platoCh.jpeg`);
+const exprimidor = new Ceramica(`ID 6`, 'Exprimidor', 'Polaca', `Blanco`, 900, 5, `./img/exprimidor.jpeg`);
+const fuente = new Ceramica(`ID 7`, 'Fuente', 'Pumba', `Blanco`, 1750, 6, `./img/fuente.jpg`);
+const bowlGr = new Ceramica(`ID 8`, 'Bowl Grande', 'Silver', `Blanco`, 1200, 4, `./img/bowlGr.jpg`);
+const bowlCh = new Ceramica(`ID 9`, 'Bowl Chico', 'Sancho', `Blanco`, 1000, 4, `./img/bowlCh.jpg`);
+const ensaladera = new Ceramica(`ID 10`, 'Ensaladera', 'Pe King', `Blanco`, 1200, 4, `./img/ensaladera.jpg`);
 
 let personas = []
 let ceramicas = []
@@ -66,37 +66,33 @@ $(() => {
 
     console.log("el dom está listo!");
 
-    $("#presentacion").click(function () {
-        $("#saludoJQuery").attr("class", "saludoDesdeJquery")
-        $("#saludoJQuery").fadeOut(2000)
-        $("#saludoJQuery").text("mensaje de bienvenida utilizando Jquery");
-        $("h3").addClass("text-success m-3");
-        $("#presentacion").hide();
+    $("#saludoJQuery").attr("class", "saludoDesdeJquery")
+    $("#saludoJQuery").fadeOut(4000)
+    $("#saludoJQuery").text("javaScript");
+    $("h3").addClass("text-success m-3");
+    $("#presentacion").hide();
 
-        //Animaciones y ejecuión de métodos encadenados
-        $(".jQueryFooter").prepend('<div id="animacionJQuery" class="text-primary"><h2>Jquery: Write Less, Do More!</h2></div>');
-        $("#animacionJQuery").append('<button id="btnOcultar" class="text-light btn bg-success mb-3">cerrar</button>');
-        $("#animacionJQuery").css("background-color", "#fdb7f4")
-            .delay(1000)
-            .slideDown(2000);
-        $(".datosCursada").hide();
-        //Usamos slideUp sobre div1 en respuesta al click del boton btn1
-        $("#btnOcultar").click(() => {
-            $(".btn-comienzo").show();
+    //Animaciones y ejecuión de métodos encadenados
+    $(".jQueryFooter").prepend('<div id="animacionJQuery" class="text-primary"><h2>Entrega de Proyecto</h2></div>');
+    $("#animacionJQuery").append('<button id="btnOcultar" class="text-light btn bg-success m-5">entrar</button>');
 
-            $("#animacionJQuery").attr("class", "h2 text-primary m-5 p-5");
-            $("#animacionJQuery").fadeOut(3500);
-            $("#animacionJQuery").css("background-color", "black")
-            $("#animacionJQuery").text("Ajax con JQuery y JavaScript 'vanilla'");
-            $(".datosCursada").append('<div class="text-success m-5"><h3>JavaScript en Coder House</h3></div>');
-            $(".datosCursada").append('<div class="text-success m-5"><h4>Camada-16790</h4></div>');
-            $(".datosCursada").append('<div class="text-success m-5"><h4>Profesor Titular: Julián Fuoco</h4></div>');
-            $(".datosCursada").append('<div class="text-success m-5"><h4>Profesor Adjunto: Juan Chapur</h4></div>');
-            $(".datosCursada").append('<div class="text-success m-5"><h4>Tutora: Solange Mac Intyre</h4></div>');
-            $(".datosCursada").append('<div class="text-success m-5"><h4>Alumno: Guillermo Vicente</h4></div>');
-            $(".datosCursada").hide()
-        });
-    })
+    $(".datosCursada").hide();
+    //Usamos slideUp sobre div1 en respuesta al click del boton btn1
+    $("#btnOcultar").click(() => {
+        $(".btn-comienzo").show();
+        $("#animacionJQuery").attr("class", "h2 text-primary m-5 p-5");
+        $("#animacionJQuery").fadeOut(6000);
+        $("#animacionJQuery").css("background-color", "black")
+        $("#animacionJQuery").text("PROYECTO INTERACTIVO DE CARRITO DE COMPRAS CODERHOUSE - Comisión 16790 - Profesor: Julián Fuoco");
+        $(".datosCursada").append('<div class="text-success m-5"><h3>JavaScript en Coder House</h3></div>');
+        $(".datosCursada").append('<div class="text-success m-5"><h4>Camada-16790</h4></div>');
+        $(".datosCursada").append('<div class="text-success m-5"><h4>Profesor Titular: Julián Fuoco</h4></div>');
+        $(".datosCursada").append('<div class="text-success m-5"><h4>Profesor Adjunto: Juan Chapur</h4></div>');
+        $(".datosCursada").append('<div class="text-success m-5"><h4>Tutora: Solange Mac Intyre</h4></div>');
+        $(".datosCursada").append('<div class="text-success m-5"><h4>Alumno: Guillermo Vicente</h4></div>');
+        $(".datosCursada").hide()
+    });
+
 
     $(".btn-comienzo").click(function () {
         $("#presentacion").hide();
@@ -145,21 +141,21 @@ $(() => {
                             <div class="bg-warning">Dirección: ${dato.address.suite}</div>
                             <div class="bg-warning" >Ciudad: ${dato.address.city}</div>
                         </div>`);
-                })
-            }
+                });
+            };
             $(".locales").css("background-color", "#fdb7f4")
                 .delay(1000)
                 .slideUp(3500)
         });
     });
 
-    //  Evento para mostrar Usuarix:
+    // Evento para mostrar Usuarix:
     const mostrarMenu = document.getElementById("mostrarMenu");
-    mostrarMenu.addEventListener("click", mostrarFormulario)
+    mostrarMenu.addEventListener("click", mostrarFormulario);
 
     function mostrarFormulario() {
         document.getElementById("formularioUs").classList.toggle("oculto");
-    }
+    };
 
     //agrego dentro de sesionUsuario un div con un formulario para poder recoger los datos de usuarios
     $('#sesionUsuario').append(
@@ -490,9 +486,9 @@ $(() => {
                 parrafoResultadoDolares.setAttribute("class", "card");
                 let parrafoDatosUsuario = document.createElement("p");
 
-                JSON.parse(localStorage.getItem("nombre")) == null ? parrafoDatosUsuario.textContent = `Por favor vuelva a ingresar y regístrese para poder operar` : parrafoDatosUsuario.textContent = `Se efectúa venta al usuario ${JSON.parse(localStorage.getItem("nombre"))} ${JSON.parse(localStorage.getItem("apellido"))} por valor de $ ` + precioFinal + ` - IVA incluído`;
+                JSON.parse(localStorage.getItem("nombre")) == null ? parrafoDatosUsuario.textContent = `Por favor vuelva a ingresar y regístrese para poder operar` : parrafoDatosUsuario.textContent = `Se efectúa venta a ${JSON.parse(localStorage.getItem("nombre"))} ${JSON.parse(localStorage.getItem("apellido"))} por valor de $ ` + precioFinal + ` - IVA incluído`;
 
-                parrafoDatosUsuario.classList.add('card');
+                parrafoDatosUsuario.classList.add('card', 'textoRegistroUsuario');
 
                 let final = document.createElement("button");
                 final.textContent = `FIN`;
