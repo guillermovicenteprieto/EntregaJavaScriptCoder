@@ -33,11 +33,11 @@ const tazaCh = new Ceramica(`ID 2`, 'Taza Chica', 'Agatha', `Blanco`, 650, 12, `
 const tetera = new Ceramica(`ID 3`, 'Tetera', 'Pocha', `Blanco`, 1200, 5, `./img/tetera.jpg`);
 const platoGr = new Ceramica(`ID 4`, 'Plato Grande', 'Pachorra', `Blanco`, 1000, 12, `./img/platoGr.jpg`);
 const platoCh = new Ceramica(`ID 5`, 'Plato Chico', 'AzarOso', `Blanco`, 850, 12, `./img/platoCh.jpeg`);
-const exprimidor = new Ceramica(`ID 6`, 'Exprimidor', 'Polaca', `Blanco`, 900, 5, `./img/exprimidor.jpeg`);
+const exprimidor = new Ceramica(`ID 6`, 'Exprimidor', 'Polaca', `Blanco`, 900, 5, `/img/exprimidor.jpeg`);
 const fuente = new Ceramica(`ID 7`, 'Fuente', 'Pumba', `Blanco`, 1750, 6, `./img/fuente.jpg`);
-const bowlGr = new Ceramica(`ID 8`, 'Bowl Grande', 'Silver', `Blanco`, 1200, 4, `./img/bowlGr.jpg`);
-const bowlCh = new Ceramica(`ID 9`, 'Bowl Chico', 'Sancho', `Blanco`, 1000, 4, `./img/bowlCh.jpg`);
-const ensaladera = new Ceramica(`ID 10`, 'Ensaladera', 'Pe King', `Blanco`, 1200, 4, `./img/ensaladera.jpg`);
+const bowlGr = new Ceramica(`ID 8`, 'Bowl Grande', 'Silver', `Blanco`, 1200, 4, `/img/bowlGr.jpg`);
+const bowlCh = new Ceramica(`ID 9`, 'Bowl Chico', 'Sancho', `Blanco`, 1000, 4, `img/bowlCh.jpg`);
+const ensaladera = new Ceramica(`ID 10`, 'Ensaladera', 'Pe King', `Blanco`, 1200, 4, `img/ensaladera.jpg`);
 
 let personas = []
 let ceramicas = []
