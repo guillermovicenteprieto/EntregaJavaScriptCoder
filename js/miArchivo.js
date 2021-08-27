@@ -30,7 +30,7 @@ class Ceramica {
 //Instanciando objetos a partir de la clase Cerámica
 const tazaGr = new Ceramica(`ID 1`, 'Taza Grande', 'Lorenzo', `Blanco`, 900, 12, `img/tazasGr.jpeg`);
 const tazaCh = new Ceramica(`ID 2`, 'Taza Chica', 'Agatha', `Blanco`, 650, 12, `img/tazasCh.jpg`);
-const tetera = new Ceramica(`ID 3`, 'Tetera', 'Pocha', `Blanco`, 1200, 5, `img/teterax.jpg`);
+const tetera = new Ceramica(`ID 3`, 'Tetera', 'Pocha', `Blanco`, 1200, 5, `img/tetera.jpg`);
 const platoGr = new Ceramica(`ID 4`, 'Plato Grande', 'Pachorra', `Blanco`, 1000, 12, `img/platoGr.jpg`);
 const platoCh = new Ceramica(`ID 5`, 'Plato Chico', 'AzarOso', `Blanco`, 850, 12, `img/platoCh.jpeg`);
 const exprimidor = new Ceramica(`ID 6`, 'Exprimidor', 'Polaca', `Blanco`, 900, 5, `img/exprimidor.jpeg`);
@@ -508,7 +508,7 @@ $(() => {
 
                 let articleVenta = document.createElement("article");
                 articleVenta.textContent = `VENTA ACTUAL`;
-                articleVenta.setAttribute("class", "ventaUsuario");
+                articleVenta.setAttribute("class", "textoRegistroUsuario");
 
                 articleVenta.appendChild(parrafoResultadoCompra);
                 articleVenta.appendChild(parrafoResultadoConIVA);
